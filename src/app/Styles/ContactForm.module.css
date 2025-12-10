@@ -1,0 +1,68 @@
+:root {
+  --form-width: 560px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.centerBox {
+  width: var(--form-width);
+  max-width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.form {
+  background: transparent;
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+}
+
+.selectOption {
+  display: inline-flex;
+  align-items: center;
+}
+
+.flag {
+  margin-right: 8px;
+}
+
+.countryCode {
+  font-weight: 600;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  background: #151515 !important;
+  color: #fff !important;
+  border: none !important;
+  height: 40px;
+}
+
+.disclaimer {
+  margin-top: 8px;
+  text-align: center;
+  padding: 0 6px;
+}
+
+@media (max-width: 520px) {
+  :root {
+    --form-width: 92vw;
+  }
+  .phoneRow {
+    gap: 8px;
+  }
+}

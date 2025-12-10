@@ -1,0 +1,247 @@
+.footer {
+  /* border-top: #0b0b0b 1px solid; */
+  background: rgb(201, 164, 108, 0.2);
+  color: #515151;
+  padding: 48px 48px 28px;
+}
+
+/* ---------- TOP ---------- */
+.top {
+  max-width: 1300px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  padding-bottom: 28px;
+}
+
+.topInner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.topTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #515151;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #515151;
+  font-size: 18px;
+  transition: all 0.18s ease;
+}
+.socialLink:hover {
+  background: #f6f6ff;
+  color: #5b2be6;
+  transform: translateY(-2px);
+}
+
+/* ---------- MIDDLE ---------- */
+.middle {
+  max-width: 1300px;
+  margin: 34px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+
+.column h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #515151;
+  font-size: 14px;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribeText {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #515151;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.emailInput {
+  flex: 1 1 auto;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.emailInput::placeholder {
+  color: #999;
+}
+
+.signUpBtn {
+  padding: 10px 14px;
+  background: black;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- BOTTOM ---------- */
+.bottom {
+  max-width: 1300px;
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+}
+
+/* left side of bottom */
+.leftBottom {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 280px;
+}
+
+/* small links block */
+.smallLinks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #515151;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.smallLinks a {
+  color: #515151;
+  text-decoration: none;
+}
+
+.smallLinks a:hover {
+  text-decoration: underline;
+}
+
+.dot {
+  color: 515151;
+  margin: 0 6px;
+}
+
+/* copyright small line (under small links on smaller screens) */
+.smallLinks .copyright {
+  display: block;
+  margin-left: 8px;
+  color: #515151;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+/* payments icons container */
+.payments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.paymentIcon {
+  height: 20px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 3px;
+  background: transparent;
+  padding: 2px;
+  filter: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .topInner,
+  .middle,
+  .bottom {
+    padding: 0 18px;
+  }
+
+  .topInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .smallLinks .copyright {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .leftBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .payments {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .middle {
+    margin: 24px auto;
+  }
+  .subscribeForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .signUpBtn {
+    width: 130px;
+    align-self: flex-end;
+  }
+}
