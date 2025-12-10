@@ -154,7 +154,7 @@ export default function HomePage() {
             role="region"
             aria-label="Why we do it"
           >
-            <img src="/images/why_wo_do.jpg" alt="Community outreach" />
+            <img src="/images/why_wo_do.webp" alt="Community outreach" />
             <AnimatedSection delay={0.4} className="overlay">
               <div className="overlayInner portraitRight">
                 <h2 className="alignTopRight">Why We Do It</h2>

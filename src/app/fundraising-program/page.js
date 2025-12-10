@@ -147,7 +147,7 @@ const FundraisingPage = () => {
           <Col xs={24} md={12} className={styles.imageCol}>
             <AnimatedSection delay={0.38}>
               <img
-                src="/images/why_wo_do.jpg"
+                src="/images/fundraising/Fundraising program_Bigger impact.jpg"
                 alt="globe in hands"
                 className={styles.image}
               />

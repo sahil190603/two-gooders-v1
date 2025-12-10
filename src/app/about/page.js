@@ -48,7 +48,7 @@ export default function About() {
             className={styles.missionImage}
             aria-hidden
           >
-            <img src="/images/why_wo_do.jpg" alt="Why we do it" />
+            <img src="/images/about/About us_Our Mission.jpg" alt="Why we do it" />
           </AnimatedSection>
         </div>
       </AnimatedSection>
