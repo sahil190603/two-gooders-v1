@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import "antd/dist/reset.css";
 import { Button } from "antd";
 import { AnimatedSection } from "./components/AnimatedSection";
+import "./page.css";
 
 const lines = [
   "Your selected charity receives a big chunk of the profit from your purchase. ONE GOODER",
@@ -19,7 +20,10 @@ export default function HomePage() {
   return (
     <main>
       <section className="hero" aria-labelledby="hero-heading">
-        <div className="hero-logo-overlay">
+        <div className="hero-image">
+        <img src="/images/Hero image.png" />
+        </div>
+        {/* <div className="hero-logo-overlay">
           <img src="/images/logo.png" alt="Company logo overlay" />
         </div>
         <AnimatedSection
@@ -65,7 +69,7 @@ export default function HomePage() {
               ))}
             </AnimatedSection>
           </AnimatedSection>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         <AnimatedSection
           delay={0.18}
@@ -74,7 +78,7 @@ export default function HomePage() {
           aria-label="Join actions"
         >
           <AnimatedSection delay={0.2}>
-            <div className="hero-join-title">Join Us In Doing Some Good!</div>
+            <div className="hero-join-title">JOIN US IN DOING SOME GOOD!</div>
           </AnimatedSection>
           <AnimatedSection delay={0.22} className="hero-join-bar">
             <div className="hero-join-buttons">
