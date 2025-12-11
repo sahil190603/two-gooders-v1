@@ -172,6 +172,7 @@
 }
 
 .foundingIntro {
+  width: 1200px;
   padding: 16px;
   font-size: var(--text-base);
   text-align: left;

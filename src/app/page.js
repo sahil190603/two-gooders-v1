@@ -77,9 +77,9 @@ export default function HomePage() {
           role="region"
           aria-label="Join actions"
         >
-          <AnimatedSection delay={0.2}>
+          {/* <AnimatedSection delay={0.2}>
             <div className="hero-join-title">JOIN US IN DOING SOME GOOD!</div>
-          </AnimatedSection>
+          </AnimatedSection> */}
           <AnimatedSection delay={0.22} className="hero-join-bar">
             <div className="hero-join-buttons">
               <div className="hero-card">
