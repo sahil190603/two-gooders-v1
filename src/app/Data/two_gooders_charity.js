@@ -21,7 +21,7 @@ const charitiesData = [
   },
   {
     id: 5,
-    name: "UCLA Men's club volleyball",
+    name: "UCLA Men's Club Volleyball",
     description: "We are a competitive and dynamic team that fosters skill development, teamwork, and a passion for the sport, competing at a high level against other collegiate clubs."
   },
   {

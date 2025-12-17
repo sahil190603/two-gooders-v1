@@ -312,13 +312,16 @@
   word-break: break-word;
   overflow-wrap: anywhere;
 }
+.hero-card-title{
+  font-weight: 800;
+}
 
 /* Make button flexible — don't force a large min-width that breaks layout */
 .hero-join-btn {
   pointer-events: auto;
   border: 1px solid rgba(0, 0, 0, 0.35);
   background-color: #DBB485;
-  font-weight: 600;
+  font-weight: 800;
   font-size: clamp(0.75rem, 1.1vw, var(--text-sm));
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
   cursor: pointer;
@@ -603,11 +606,11 @@
   bottom: 1.5rem;
   right: 1.5rem;
   box-sizing: border-box;
-  padding: 0 0 0 1rem;
+  padding: 0;
   margin: 0;
-  list-style: disc inside;
   pointer-events: auto;
   color: #fff;
+  list-style: none;
 }
 
 

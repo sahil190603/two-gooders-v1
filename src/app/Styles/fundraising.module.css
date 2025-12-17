@@ -12,7 +12,8 @@
   /* margin-bottom: 12px; */
   padding: 5px 18px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
+    gap: 20px;
   align-items: center;
   background: #DBB485;
   box-shadow: 0 6px 16px rgba(16,24,40,0.06);
@@ -37,7 +38,6 @@
 .headerIntro {
   max-width: 800px;
   margin: 0 auto 12px;
-  font-style: italic;
   font-size: var(--text-base);
   line-height: 1.6;
 }
@@ -45,7 +45,7 @@
 /* section headings */
 .sectionHeading {
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 65px;
   font-size: var(--text-2xl); /* ~24px */
   line-height: 1.25;
 }

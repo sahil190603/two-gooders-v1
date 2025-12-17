@@ -11,7 +11,7 @@ const page = () => {
     <div className={styles.container}>
       <AnimatedSection delay={0.08}>
         <h2
-          style={{ textAlign: "center", marginTop: "100px" }}
+          style={{ textAlign: "center", marginTop: "100px", fontWeight:800 }}
           id="page-title"
         >
           Become a Supplier

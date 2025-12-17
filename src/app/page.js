@@ -138,11 +138,11 @@ export default function HomePage() {
                 <h2>Gift Giving With Purpose</h2>
                 <div className="portraitCopy">
                   <div className="line">
-                    <strong>Before Two Gooders:</strong>
+                    <strong>Before Two Gooders</strong>
                     <span>Gift shopping only benefited company profits.</span>
                   </div>
                   <div className="line">
-                    <strong>Now:</strong>
+                    <strong>Now</strong>
                     <span>
                       Gift shopping shares profits with your favorite charities.
                     </span>

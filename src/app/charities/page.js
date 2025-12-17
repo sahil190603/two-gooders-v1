@@ -96,8 +96,7 @@ const CharitiesPage = () => {
               boxSizing: "border-box"
             }}
           >
-            <Text>
-              To shop on behalf of your chosen charity, use the “Shop for this charity” link. We will calculate half of the profit from your purchase and send it to that charity.
+            <Text>We will calculate half of the profit from your purchase and send it to that charity.
             </Text>
           </div>
         </AnimatedSection>

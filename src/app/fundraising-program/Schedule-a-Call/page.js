@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <AnimatedSection delay={0.08}>
-        <h2 style={{ textAlign: "center" , marginTop: "100px"}} id="page-title">
+        <h2 style={{ textAlign: "center" , marginTop: "100px", fontWeight:800}} id="page-title">
           Schedule a Call
         </h2>
       </AnimatedSection>

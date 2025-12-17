@@ -27,7 +27,7 @@ function getFlagUrl(code, size = "24x18") {
 export default function ContactForm() {
   const [form] = Form.useForm();
   // default prefix
-  const [countryPrefix, setCountryPrefix] = useState("+972");
+  const [countryPrefix, setCountryPrefix] = useState("+1");
   const [loading, setLoading] = useState(false);
   const { message } = App.useApp();
 

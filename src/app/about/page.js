@@ -344,7 +344,7 @@ export default function About() {
 
                 <AnimatedSection delay={0.3} className={styles.seanImage}>
                   <img
-                    src="/images/about/Sean Hoffmeister.png"
+                    src="/images/about/Sean Hoffmeister.jpg"
                     alt="Sean Hoffmeister"
                   />
                 </AnimatedSection>

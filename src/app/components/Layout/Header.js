@@ -54,7 +54,7 @@ const TopHeader = () => {
         className={`${styles.promoBanner} ${hideBanner ? styles.hideBanner : ""}`}
         style={{ height: `${BANNER_HEIGHT}px` }}
       >
-        STOCK UP ON GIFTS TO HAVE ON HAND. DO MORE GOOD.
+        YOUR GO-TO FOR GIFTS FOR ANY REASON
       </div>
 
       {/* Fixed Header */}
