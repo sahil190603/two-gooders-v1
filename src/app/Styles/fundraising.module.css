@@ -1,4 +1,3 @@
-
 /* container/header */
 .container {
   margin: 40px auto;
@@ -7,21 +6,22 @@
 /* TOP CTA (sticky at top of viewport) */
 .topCtaBar {
   position: sticky;
- margin-top: 95px;
+  margin-top: 95px;
   z-index: 1000;
   /* margin-bottom: 12px; */
   padding: 5px 18px;
   display: flex;
   justify-content: right;
-    gap: 20px;
+  gap: 20px;
   align-items: center;
   background: #DBB485;
-  box-shadow: 0 6px 16px rgba(16,24,40,0.06);
+  box-shadow: 0 6px 16px rgba(16, 24, 40, 0.06);
 }
 
 /* header */
 .header {
-  margin-top: 10px; /* reduced because CTA sits above */
+  margin-top: 10px;
+  /* reduced because CTA sits above */
   text-align: center;
   padding: 20px 0 30px;
 }
@@ -46,7 +46,8 @@
 .sectionHeading {
   font-weight: 700;
   margin-top: 65px;
-  font-size: var(--text-2xl); /* ~24px */
+  font-size: var(--text-2xl);
+  /* ~24px */
   line-height: 1.25;
 }
 
@@ -60,7 +61,7 @@
 
 /* ⭐ ONLY NEW: gold background class */
 .accentCard {
-  background: var(--gold, rgba(201,164,108,0.15));
+  background: var(--gold, rgba(201, 164, 108, 0.15));
 }
 
 /* columns */
@@ -79,12 +80,13 @@
   max-height: 360px;
   object-fit: cover;
   display: inline-block;
-  box-shadow: 0 0 0 rgba(0,0,0,0.03);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.03);
 }
 
 /* small label above section content */
 .sectionTitle {
-  font-size: var(--text-lg); /* ~14px */
+  font-size: var(--text-lg);
+  /* ~14px */
   font-weight: 800;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -95,7 +97,8 @@
 .sectionText {
   color: #515151;
   line-height: 1.6;
-  font-size: var(--text-lg); /* ~16px */
+  font-size: var(--text-lg);
+  /* ~16px */
 }
 
 /* lists */
@@ -108,7 +111,8 @@
 
 .ctaText {
   font-weight: 700;
-  font-size: var(--text-sm); /* ~14px */
+  font-size: var(--text-sm);
+  /* ~14px */
 }
 
 /* override for the Ant Design button */
@@ -116,24 +120,67 @@
   background: black;
   border: none;
   color: white;
-  font-size: var(--text-base); /* button label ~16px */
+  font-size: var(--text-base);
+  /* button label ~16px */
   padding: 10px 16px;
   cursor: pointer;
 }
 
 /* Responsive tweaks */
 @media (max-width: 992px) {
-  .headerTitle { font-size: var(--text-2xl); } /* 24px on medium screens */
-  .sectionHeading { font-size: var(--text-xl); } /* 20px */
+  .headerTitle {
+    font-size: var(--text-2xl);
+  }
+
+  /* 24px on medium screens */
+  .sectionHeading {
+    font-size: var(--text-xl);
+  }
+
+  /* 20px */
 }
 
 @media (max-width: 768px) {
-  .container { padding-bottom: 40px; }
-  .image { max-height: 260px; }
-  .topCtaBar { flex-direction: column; gap: 8px; align-items: stretch; position: sticky; padding: 12px; }
-  .ctaBar { flex-direction: column; gap: 12px; align-items: stretch; }
-  .headerTitle { font-size: var(--text-2xl); } /* 24px on small screens */
-  .headerIntro { font-size: var(--text-base); } /* 16px */
-  .sectionHeading { font-size: var(--text-xl); } /* 20px */
-  .sectionTitle { font-size: var(--text-xs); } /* 12px for small labels */
+  .container {
+    padding-bottom: 40px;
+  }
+
+  .image {
+    max-height: 260px;
+  }
+
+  .topCtaBar {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+    position: sticky;
+    padding: 12px;
+  }
+
+  .ctaBar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .headerTitle {
+    font-size: var(--text-2xl);
+  }
+
+  /* 24px on small screens */
+  .headerIntro {
+    font-size: var(--text-base);
+  }
+
+  /* 16px */
+  .sectionHeading {
+    font-size: var(--text-xl);
+  }
+
+  /* 20px */
+  .sectionTitle {
+    font-size: var(--text-xs);
+  }
+
+  /* 12px for small labels */
 }

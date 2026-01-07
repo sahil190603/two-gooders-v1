@@ -8,9 +8,9 @@ import { AnimatedSection } from "./components/AnimatedSection";
 import "./page.css";
 
 const lines = [
-  "Your selected charity receives a big chunk of the profit from your purchase. ONE GOODER",
-  "Additional funds from every sale go to our favorite charities. TWO GOODER",
-  "And...many of our suppliers support additional charities! Gifts That Give Back",
+  "A meaningful portion of every purchase goes to the charity you select. ONE GOODER",
+  "Each order also helps fund additional charities we love. TWO GOODER",
+  "Many of our suppliers support their own charities! Gifts That Give Back",
 ];
 
 export default function HomePage() {
@@ -21,65 +21,33 @@ export default function HomePage() {
     <main>
       <section className="hero" aria-labelledby="hero-heading">
         <div className="hero-image">
-        <img src="/images/Hero image.png" />
+          <img src="/images/Hero image.jpeg" alt="Hero Background" />
         </div>
-        {/* <div className="hero-logo-overlay">
-          <img src="/images/logo.png" alt="Company logo overlay" />
+
+        {/* Logo Overlay */}
+        <div className="hero-logo-overlay">
+          <img src="/images/logo.png" alt="Two Gooders Logo" />
         </div>
-        <AnimatedSection
-          delay={0.06}
-          className="hero-image-single"
-          aria-hidden="true"
-        >
-          <img
-            className="hero-main-image"
-            src="/images/home4.png"
-            alt="People giving and gifting"
-          />
 
-          <AnimatedSection
-            delay={0.08}
-            className="hero-quote-container gift-tag-quote"
-            aria-hidden="true"
-          >
-            <div className="quote-background">
-              <h4 id="hero-heading" className="hero-quote">
-                "Alone we can do so little, together we can do so much"
-              </h4>
-              <cite className="quote-author">— Helen Keller</cite>
-            </div>
-          </AnimatedSection>
-        </AnimatedSection>
-
-        <AnimatedSection delay={0.1} className="hero-overlay">
-          <AnimatedSection
-            delay={0.12}
-            className="hero-main-content"
-            aria-live="polite"
-          >
-            <h2 className="hero-mainline">
-              Make Two Gooders your go-to shop for gifts for any reason
-            </h2>
-
-            <AnimatedSection delay={0.14} className="hero-lines">
-              {lines.map((text, i) => (
-                <p key={i} className="hero-line">
-                  <span className="hero-line-text">{text}</span>
-                </p>
-              ))}
-            </AnimatedSection>
-          </AnimatedSection>
-        </AnimatedSection> */}
-
+        {/* Text Lines Overlay */}
+        <div className="hero-content-overlay">
+          <div className="hero-lines">
+            {lines.map((text, i) => (
+              <div key={i} className="hero-line">
+                <span className="hero-line-text">{text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
         <AnimatedSection
           delay={0.18}
           className="hero-join-wrapper"
           role="region"
           aria-label="Join actions"
         >
-          {/* <AnimatedSection delay={0.2}>
+          <AnimatedSection delay={0.2}>
             <div className="hero-join-title">JOIN US IN DOING SOME GOOD!</div>
-          </AnimatedSection> */}
+          </AnimatedSection>
           <AnimatedSection delay={0.22} className="hero-join-bar">
             <div className="hero-join-buttons">
               <div className="hero-card">
@@ -201,7 +169,7 @@ export default function HomePage() {
           </div>
           <div className="image">
             <img
-              src="/images/fund_raising.jpg"
+              src="/images/Fundraising image.jpeg"
               alt="Fundraising illustration"
             />
           </div>

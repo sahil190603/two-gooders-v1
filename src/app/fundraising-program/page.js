@@ -79,7 +79,8 @@ const FundraisingPage = () => {
           <Col xs={24} md={12} className={styles.imageCol}>
             <AnimatedSection delay={0.22}>
               <img
-                src="/images/fundraising/team_huddle.webp"
+                // src="/images/fundraising/team_huddle.webp"
+                src="/images/fundraising/BE_SUPPORTED.webp"
                 alt="team huddle"
                 className={styles.image}
               />
@@ -98,7 +99,8 @@ const FundraisingPage = () => {
           <Col xs={24} md={12} className={styles.imageCol}>
             <AnimatedSection delay={0.28}>
               <img
-                src="/images/fundraising/BE_SUPPORTED.webp"
+                // src="/images/fundraising/BE_SUPPORTED.webp"
+                src="/images/fundraising/White shirt team.jpg"
                 alt="working at laptop"
                 className={styles.image}
               />
@@ -109,8 +111,8 @@ const FundraisingPage = () => {
             <AnimatedSection delay={0.3}>
               <h4 className={styles.sectionTitle}>BE SUPPORTED</h4>
               <Paragraph className={styles.sectionText}>
-                The Two Gooders team will provide you with assistance on the
-                following and beyond
+                Two Gooders will provide you with assistance on the following
+                and beyond
               </Paragraph>
 
               <ul className={styles.bulletList}>
