@@ -33,7 +33,7 @@
 }
 
 .hero-logo-overlay img {
-  width: 200px;
+  width: 160px;
   max-width: 40vw;
   height: auto;
   object-fit: contain;
@@ -42,7 +42,7 @@
 
 .hero-content-overlay {
   position: absolute;
-  top: 47%;
+  top: 50%;
   right: 5%;
   /* Moved to right */
   left: auto;
@@ -51,23 +51,41 @@
   /* max-width: 500px; */
   /* Constrain width for better reading on right */
   pointer-events: none;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .hero-lines {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
+  /* Increased gap for separation */
   align-items: flex-start;
-  /* Align items to the right */
+  width: 100%;
+  /* max-width: 800px; */
+  /* Ensure it doesn't stretch too far if not needed */
 }
 
 .hero-line {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0;
+  display: block;
+  /* Changed to block to respect margins easily */
+  width: 100%;
 }
+
+/* Staircase effect */
+.hero-line:nth-child(1) {
+  margin-left: 0;
+}
+
+.hero-line:nth-child(2) {
+  margin-left: 10%;
+  /* Indent 2nd line */
+}
+
+.hero-line:nth-child(3) {
+  margin-left: 16%;
+  /* Indent 3rd line more */
+}
+
 
 /* Removed bullet point as per reference design */
 .hero-line::before {
@@ -75,15 +93,13 @@
 }
 
 .hero-line-text {
-  font-size: clamp(1rem, 1.4vw, 1.25rem);
-  font-weight: 600;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 500;
+  /* Slightly lighter weight for clean look */
   color: #333333;
-  /* Transparent background as per clean design ref */
   background: transparent;
   padding: 0;
-  line-height: 1.5;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-  /* Subtle light shadow for contrast if needed, or remove if bg is light enough */
+  line-height: 1.4;
 }
 
 .hero-image img {
@@ -96,28 +112,45 @@
 /* Overlay the join wrapper at the bottom */
 .hero-join-wrapper {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  pointer-events: none;
 }
 
-/* Title styling - Right aligned as requested */
-.hero-join-title {
-  text-align: right;
-  font-weight: 800;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  /* increased size */
-  color: #333333;
-  /* Ensure visibility on image */
-  /* padding-right: 18%; */
-  text-align: right;
-  padding-right: 5%;
-  padding-bottom: 5px;
+/* Title styling - Positioned under the vase (bottom right) */
+.hero-join-title-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* Align child (title) to the right */
+  margin-bottom: 14vh;
+  /* Lift up significantly */
+  padding-right: 12vw;
+  /* Right spacing */
+  pointer-events: none;
+}
+
+.hero-join-title {
+  text-align: left;
+  font-family: serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: #000;
+
+  position: relative;
+  /* Reduced margins as wrapper handles positioning */
+  margin: 0;
+  width: auto;
+  pointer-events: auto;
+  letter-spacing: 1px;
+  padding: 0;
 }
 
 .hero-join-bar {
@@ -128,7 +161,7 @@
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  padding: 8px 0;
+  padding: 10px 0;
   /* box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2); */
 }
 

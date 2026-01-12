@@ -8,9 +8,18 @@ import { AnimatedSection } from "./components/AnimatedSection";
 import "./page.css";
 
 const lines = [
-  "A meaningful portion of every purchase goes to the charity you select. ONE GOODER",
-  "Each order also helps fund additional charities we love. TWO GOODER",
-  "Many of our suppliers support their own charities! Gifts That Give Back",
+  {
+    text: "A meaningful portion of every purchase goes to the charity you select.",
+    bold: " ONE GOODER",
+  },
+  {
+    text: "Each order also helps fund additional charities we love.",
+    bold: " TWO GOODER",
+  },
+  {
+    text: "Many of our suppliers support their own charities!",
+    bold: " Gifts That Give Back",
+  },
 ];
 
 export default function HomePage() {
@@ -32,9 +41,12 @@ export default function HomePage() {
         {/* Text Lines Overlay */}
         <div className="hero-content-overlay">
           <div className="hero-lines">
-            {lines.map((text, i) => (
+            {lines.map((line, i) => (
               <div key={i} className="hero-line">
-                <span className="hero-line-text">{text}</span>
+                <span className="hero-line-text">
+                  {line.text}
+                  <span style={{ fontWeight: 600 }}>{line.bold}</span>
+                </span>
               </div>
             ))}
           </div>
@@ -45,51 +57,49 @@ export default function HomePage() {
           role="region"
           aria-label="Join actions"
         >
-          <AnimatedSection delay={0.2}>
+          <AnimatedSection delay={0.2} className="hero-join-title-wrapper">
             <div className="hero-join-title">JOIN US IN DOING SOME GOOD!</div>
-          </AnimatedSection>
-          <AnimatedSection delay={0.22} className="hero-join-bar">
-            <div className="hero-join-buttons">
-              <div className="hero-card">
-                <div className="hero-card-title">Shoppers</div>
-                <div className="hero-card-text">
-                  Start shopping by choosing a charity to support.
-                </div>
-                <Button
-                  className="hero-join-btn"
-                  onClick={() => go("/charities")}
-                >
-                  Shop
-                </Button>
-              </div>
-              <div className="hero-card">
-                <div className="hero-card-title">Become a Supplier</div>
-                <div className="hero-card-text">
-                  Boost your business and the good we all do.
-                </div>
-                <Button
-                  className="hero-join-btn"
-                  onClick={() => go("/suppliers-and-artisans")}
-                >
-                  Become a Supplier
-                </Button>
-              </div>
-              <div className="hero-card">
-                <div className="hero-card-title">Charities</div>
-                <div className="hero-card-text">
-                  Learn more about our no‑cost fundraising program.
-                </div>
-                <Button
-                  className="hero-join-btn"
-                  onClick={() => go("/fundraising-program")}
-                >
-                  Fundraise
-                </Button>
-              </div>
-            </div>
           </AnimatedSection>
         </AnimatedSection>
       </section>
+
+      <AnimatedSection delay={0.22} className="hero-join-bar">
+        <div className="hero-join-buttons">
+          <div className="hero-card">
+            <div className="hero-card-title">Shoppers</div>
+            <div className="hero-card-text">
+              Start shopping by choosing a charity to support.
+            </div>
+            <Button className="hero-join-btn" onClick={() => go("/charities")}>
+              Shop
+            </Button>
+          </div>
+          <div className="hero-card">
+            <div className="hero-card-title">Become a Supplier</div>
+            <div className="hero-card-text">
+              Boost your business and the good we all do.
+            </div>
+            <Button
+              className="hero-join-btn"
+              onClick={() => go("/suppliers-and-artisans")}
+            >
+              Become a Supplier
+            </Button>
+          </div>
+          <div className="hero-card">
+            <div className="hero-card-title">Charities</div>
+            <div className="hero-card-text">
+              Learn more about our no‑cost fundraising program.
+            </div>
+            <Button
+              className="hero-join-btn"
+              onClick={() => go("/fundraising-program")}
+            >
+              Fundraise
+            </Button>
+          </div>
+        </div>
+      </AnimatedSection>
 
       {/* Rest of your existing content remains the same */}
       <div className="wrapper">
